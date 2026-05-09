@@ -3,8 +3,8 @@
 > Vue 3 directive that fires when a click is registered outside of an element.  
 > TypeScript-first · Zero dependencies · Shadow DOM ready · SSR safe
 
-[![npm version](https://img.shields.io/npm/v/v-click-outside)](https://npmjs.com/package/v-click-outside)
-[![license](https://img.shields.io/npm/l/v-click-outside)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/vue3-click-outside-directive)](https://www.npmjs.com/package/vue3-click-outside-directive)
+[![license](https://img.shields.io/npm/l/vue3-click-outside-directive)](./LICENSE)
 
 ---
 

@@ -30,6 +30,11 @@
     "click-outside",
     "nuxt"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarkGareev/v-click-outside"
+  },
+  "homepage": "https://github.com/MarkGareev/v-click-outside#readme",
   "license": "MIT",
   "peerDependencies": {
     "vue": "^3.0.0"
