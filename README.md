@@ -11,11 +11,11 @@
 ## Installation
 
 ```bash
-npm install v-click-outside
+npm install vue3-click-outside-directive
 # or
-pnpm add v-click-outside
+pnpm add vue3-click-outside-directive
 # or
-yarn add v-click-outside
+yarn add vue3-click-outside-directive
 ```
 
 ---
@@ -29,7 +29,7 @@ Register the plugin once in `main.ts` — the directive becomes available in eve
 ```ts
 // main.ts
 import { createApp } from "vue";
-import { ClickOutsidePlugin } from "v-click-outside";
+import { ClickOutsidePlugin } from "vue3-click-outside-directive";
 import App from "./App.vue";
 
 const app = createApp(App);
@@ -55,7 +55,7 @@ Import the directive directly in the component — no global setup needed.
 
 ```vue
 <script setup lang="ts">
-import { vClickOutside } from "v-click-outside";
+import { vClickOutside } from "vue3-click-outside-directive";
 
 function onClickOutside(event: PointerEvent) {
   console.log("clicked outside", event);
@@ -74,7 +74,7 @@ When using global registration, add a type declaration so the template gets prop
 ```ts
 // src/types/directives.d.ts
 import type { Directive } from "vue";
-import type { ClickOutsideHandler, ClickOutsideOptions } from "v-click-outside";
+import type { ClickOutsideHandler, ClickOutsideOptions } from "vue3-click-outside-directive";
 
 declare module "vue" {
   interface GlobalDirectives {
@@ -96,7 +96,7 @@ Create a plugin file — Nuxt picks it up automatically, no manual registration 
 
 ```ts
 // plugins/v-click-outside.ts
-import { ClickOutsidePlugin } from "v-click-outside";
+import { ClickOutsidePlugin } from "vue3-click-outside-directive";
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(ClickOutsidePlugin);
@@ -108,7 +108,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 ```ts
 // types/directives.d.ts
 import type { Directive } from "vue";
-import type { ClickOutsideHandler, ClickOutsideOptions } from "v-click-outside";
+import type { ClickOutsideHandler, ClickOutsideOptions } from "vue3-click-outside-directive";
 
 declare module "vue" {
   interface GlobalDirectives {
