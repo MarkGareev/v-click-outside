@@ -1,6 +1,6 @@
 {
   "name": "vue3-click-outside-directive",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue 3 directive that fires when a click is registered outside the element",
   "type": "module",
   "main": "./dist/v-click-outside.umd.js",
